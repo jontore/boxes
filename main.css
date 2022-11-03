@@ -1,0 +1,74 @@
+
+  body {
+    font-family: 'helvetica';
+  }
+
+
+  html {
+    --main-color: rgb(117,191,233);
+    --secondary-color:  rgb(194,49,48);
+    --third-color: rgb(217,200,150);
+  }
+
+  h1, h2 {
+      font-size: 8rem;
+      text-transform: lowercase;
+  }
+
+  h1, h2, h3, h4
+  {
+    font-family: 'helvetica';
+    color: black;
+    text-decoration: normal;
+  }
+
+  .h-strike {
+    text-decoration: line-through;
+  }
+
+  a {
+    text-decoration: unset;
+    color: black;
+  }
+
+  section {
+      text-align: center;
+      padding: 10rem;
+      min-height: 50vh;
+  }
+
+  section:nth-child(3n+1) {
+    background-color: var(--secondary-color);
+  }
+
+  section:nth-child(3n+2) {
+    background-color: var(--main-color);
+  }
+
+  section:nth-child(3n+3) {
+    background-color: var(--third-color);
+  }
+
+  ul, li  {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+      margin-top: 1rem;
+  }
+
+  p, li, figure {
+      font-size: 2rem;
+  }
+
+  img {
+    margin: 1rem;
+    border-bottom: 1rem var(--secondary-color) solid;
+  }
+
+  section:nth-child(3n+1)  img {
+    border-bottom: 1rem var(--main-color) solid;
+  }
